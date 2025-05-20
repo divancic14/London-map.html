@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_36a62ec143f7f991344f35946684c551 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_36a62ec143f7f991344f35946684c551" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_36a62ec143f7f991344f35946684c551 = L.map(
+                "map_36a62ec143f7f991344f35946684c551",
+                {
+                    center: [51.5074, -0.1278],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9a918ae2c312a92ac3f762800b13edcc = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_36a62ec143f7f991344f35946684c551);
+        
+    
+            var marker_cluster_ef799c012d83da78b68f163a6308c147 = L.markerClusterGroup(
+                {}
+            );
+            map_36a62ec143f7f991344f35946684c551.addLayer(marker_cluster_ef799c012d83da78b68f163a6308c147);
+        
+    
+            var marker_b0a4aedacaacca13629346efb2b9bcd7 = L.marker(
+                [51.5007, -0.1246],
+                {}
+            ).addTo(marker_cluster_ef799c012d83da78b68f163a6308c147);
+        
+    
+            var icon_1c9eafb8ea3c4c94ad6306e7549c675f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b0a4aedacaacca13629346efb2b9bcd7.setIcon(icon_1c9eafb8ea3c4c94ad6306e7549c675f);
+        
+    
+        var popup_1311433e70560d97fbd4aeb70c0527a5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_038a46bc2440033dd5c8a6352e455a6f = $(`<div id="html_038a46bc2440033dd5c8a6352e455a6f" style="width: 100.0%; height: 100.0%;">Westminster / Big Ben (Dan 1 – Subota)</div>`)[0];
+            popup_1311433e70560d97fbd4aeb70c0527a5.setContent(html_038a46bc2440033dd5c8a6352e455a6f);
+        
+
+        marker_b0a4aedacaacca13629346efb2b9bcd7.bindPopup(popup_1311433e70560d97fbd4aeb70c0527a5)
+        ;
+
+        
+    
+    
+            var marker_6f7f3b8c6f25704f01a6f23a54d10f54 = L.marker(
+                [51.501, -0.1195],
+                {}
+            ).addTo(marker_cluster_ef799c012d83da78b68f163a6308c147);
+        
+    
+            var icon_7d524023667242ce56417eeb084f93d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6f7f3b8c6f25704f01a6f23a54d10f54.setIcon(icon_7d524023667242ce56417eeb084f93d8);
+        
+    
+        var popup_168b3250113fc1b03b494b0016f9f894 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4abb7a9e1e26d9011b821b285e01b003 = $(`<div id="html_4abb7a9e1e26d9011b821b285e01b003" style="width: 100.0%; height: 100.0%;">Sea Life London Aquarium (Dan 1 – Subota)</div>`)[0];
+            popup_168b3250113fc1b03b494b0016f9f894.setContent(html_4abb7a9e1e26d9011b821b285e01b003);
+        
+
+        marker_6f7f3b8c6f25704f01a6f23a54d10f54.bindPopup(popup_168b3250113fc1b03b494b0016f9f894)
+        ;
+
+        
+    
+    
+            var marker_221997adc0ba275f188ff6d8a6c09f26 = L.marker(
+                [51.5033, -0.1196],
+                {}
+            ).addTo(marker_cluster_ef799c012d83da78b68f163a6308c147);
+        
+    
+            var icon_f2f44f372335d3d41ab0f89bc8f81006 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_221997adc0ba275f188ff6d8a6c09f26.setIcon(icon_f2f44f372335d3d41ab0f89bc8f81006);
+        
+    
+        var popup_b11ea91751e12a7680848c652769cd7b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e89876c01b99a4831c790873f85efdf5 = $(`<div id="html_e89876c01b99a4831c790873f85efdf5" style="width: 100.0%; height: 100.0%;">London Eye (Dan 1 – Subota)</div>`)[0];
+            popup_b11ea91751e12a7680848c652769cd7b.setContent(html_e89876c01b99a4831c790873f85efdf5);
+        
+
+        marker_221997adc0ba275f188ff6d8a6c09f26.bindPopup(popup_b11ea91751e12a7680848c652769cd7b)
+        ;
+
+        
+    
+    
+            var marker_670f13cb4a36557c38b0acc17073296a = L.marker(
+                [51.508, -0.1281],
+                {}
+            ).addTo(marker_cluster_ef799c012d83da78b68f163a6308c147);
+        
+    
+            var icon_e4c7d1934b426d3e9ba5de75abdae9e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_670f13cb4a36557c38b0acc17073296a.setIcon(icon_e4c7d1934b426d3e9ba5de75abdae9e4);
+        
+    
+        var popup_b862f294a8b1ae7e52712d5ddb5eb2de = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dc74c25d4aaf14913d05e00ef5c3f6cc = $(`<div id="html_dc74c25d4aaf14913d05e00ef5c3f6cc" style="width: 100.0%; height: 100.0%;">Trafalgar Square (Dan 1 – Subota)</div>`)[0];
+            popup_b862f294a8b1ae7e52712d5ddb5eb2de.setContent(html_dc74c25d4aaf14913d05e00ef5c3f6cc);
+        
+
+        marker_670f13cb4a36557c38b0acc17073296a.bindPopup(popup_b862f294a8b1ae7e52712d5ddb5eb2de)
+        ;
+
+        
+    
+    
+            var marker_d111956bec315a5095249c45cbd5635c = L.marker(
+                [51.5014, -0.1419],
+                {}
+            ).addTo(marker_cluster_ef799c012d83da78b68f163a6308c147);
+        
+    
+            var icon_791db0632ced4b2a3209c40187be039c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d111956bec315a5095249c45cbd5635c.setIcon(icon_791db0632ced4b2a3209c40187be039c);
+        
+    
+        var popup_dbb99ddc9b22d25183a4d14d039377da = L.popup({"maxWidth": "100%"});
+
+        
+            var html_11559ab9b4208c44335238b1e2abc7a5 = $(`<div id="html_11559ab9b4208c44335238b1e2abc7a5" style="width: 100.0%; height: 100.0%;">Buckingham Palace (Dan 1 – Subota)</div>`)[0];
+            popup_dbb99ddc9b22d25183a4d14d039377da.setContent(html_11559ab9b4208c44335238b1e2abc7a5);
+        
+
+        marker_d111956bec315a5095249c45cbd5635c.bindPopup(popup_dbb99ddc9b22d25183a4d14d039377da)
+        ;
+
+        
+    
+    
+            var marker_bc417ee8bd1481a03b97373cc9b7a6f2 = L.marker(
+                [51.5101, -0.1337],
+                {}
+            ).addTo(marker_cluster_ef799c012d83da78b68f163a6308c147);
+        
+    
+            var icon_d36fb02b259ddc4952ab032549046118 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bc417ee8bd1481a03b97373cc9b7a6f2.setIcon(icon_d36fb02b259ddc4952ab032549046118);
+        
+    
+        var popup_306330e6ccf6d4d4676b67143bf8e0c3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4e7bb027a3d7de6d395bcbdfe696dde4 = $(`<div id="html_4e7bb027a3d7de6d395bcbdfe696dde4" style="width: 100.0%; height: 100.0%;">Piccadilly Circus (Dan 1 – Subota)</div>`)[0];
+            popup_306330e6ccf6d4d4676b67143bf8e0c3.setContent(html_4e7bb027a3d7de6d395bcbdfe696dde4);
+        
+
+        marker_bc417ee8bd1481a03b97373cc9b7a6f2.bindPopup(popup_306330e6ccf6d4d4676b67143bf8e0c3)
+        ;
+
+        
+    
+    
+            var marker_9661ab9a6234dcb9b245f4167d581a43 = L.marker(
+                [51.512, -0.128],
+                {}
+            ).addTo(marker_cluster_ef799c012d83da78b68f163a6308c147);
+        
+    
+            var icon_e4b17f42691b85dbf10dad0cff041e6f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9661ab9a6234dcb9b245f4167d581a43.setIcon(icon_e4b17f42691b85dbf10dad0cff041e6f);
+        
+    
+        var popup_6f28a9028c588fefb30e3b16a656d34b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8db9dadd2eab2037e8a33f82a2d02fd5 = $(`<div id="html_8db9dadd2eab2037e8a33f82a2d02fd5" style="width: 100.0%; height: 100.0%;">Kazalište (West End) (Dan 1 – Subota)</div>`)[0];
+            popup_6f28a9028c588fefb30e3b16a656d34b.setContent(html_8db9dadd2eab2037e8a33f82a2d02fd5);
+        
+
+        marker_9661ab9a6234dcb9b245f4167d581a43.bindPopup(popup_6f28a9028c588fefb30e3b16a656d34b)
+        ;
+
+        
+    
+    
+            var marker_0a54baa0b5785d51048d0a78997ec75c = L.marker(
+                [51.4967, -0.1764],
+                {}
+            ).addTo(marker_cluster_ef799c012d83da78b68f163a6308c147);
+        
+    
+            var icon_128bf5681ac294cdf8625354866acf36 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0a54baa0b5785d51048d0a78997ec75c.setIcon(icon_128bf5681ac294cdf8625354866acf36);
+        
+    
+        var popup_b978ff2efc3974498ba5ae70870680e3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7c23f9ef9dc2006d75561782884ff9ad = $(`<div id="html_7c23f9ef9dc2006d75561782884ff9ad" style="width: 100.0%; height: 100.0%;">Natural History Museum (Dan 2 – Nedjelja)</div>`)[0];
+            popup_b978ff2efc3974498ba5ae70870680e3.setContent(html_7c23f9ef9dc2006d75561782884ff9ad);
+        
+
+        marker_0a54baa0b5785d51048d0a78997ec75c.bindPopup(popup_b978ff2efc3974498ba5ae70870680e3)
+        ;
+
+        
+    
+    
+            var marker_850a251d7c5c3a9e8740e9af49de4c73 = L.marker(
+                [51.5194, -0.127],
+                {}
+            ).addTo(marker_cluster_ef799c012d83da78b68f163a6308c147);
+        
+    
+            var icon_0a762d4e627dbe0346974fa9d9fdd86b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_850a251d7c5c3a9e8740e9af49de4c73.setIcon(icon_0a762d4e627dbe0346974fa9d9fdd86b);
+        
+    
+        var popup_c0a1173718bcd7b83541a3db344dead2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_42692210334b5a2179b3b9514f7ddd16 = $(`<div id="html_42692210334b5a2179b3b9514f7ddd16" style="width: 100.0%; height: 100.0%;">British Museum (Dan 2 – Nedjelja)</div>`)[0];
+            popup_c0a1173718bcd7b83541a3db344dead2.setContent(html_42692210334b5a2179b3b9514f7ddd16);
+        
+
+        marker_850a251d7c5c3a9e8740e9af49de4c73.bindPopup(popup_c0a1173718bcd7b83541a3db344dead2)
+        ;
+
+        
+    
+    
+            var marker_2aa6e90a4812d6bbd30954054a243789 = L.marker(
+                [51.4746, -0.2216],
+                {}
+            ).addTo(marker_cluster_ef799c012d83da78b68f163a6308c147);
+        
+    
+            var icon_8591dec5d963438e119c054b09a8488c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2aa6e90a4812d6bbd30954054a243789.setIcon(icon_8591dec5d963438e119c054b09a8488c);
+        
+    
+        var popup_8ece7bd821854a903363b1d55165b3a7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bf773c2ae0a58fdab19ea38a8ee95fe9 = $(`<div id="html_bf773c2ae0a58fdab19ea38a8ee95fe9" style="width: 100.0%; height: 100.0%;">Utakmica Fulham - Man City (Craven Cottage) (Dan 2 – Nedjelja)</div>`)[0];
+            popup_8ece7bd821854a903363b1d55165b3a7.setContent(html_bf773c2ae0a58fdab19ea38a8ee95fe9);
+        
+
+        marker_2aa6e90a4812d6bbd30954054a243789.bindPopup(popup_8ece7bd821854a903363b1d55165b3a7)
+        ;
+
+        
+    
+    
+            var marker_6f94aab32f910f5c8ce645177ad95adc = L.marker(
+                [51.4769, -0.0005],
+                {}
+            ).addTo(marker_cluster_ef799c012d83da78b68f163a6308c147);
+        
+    
+            var icon_8fe16f4f675d0820b1fdb548c45be3ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6f94aab32f910f5c8ce645177ad95adc.setIcon(icon_8fe16f4f675d0820b1fdb548c45be3ca);
+        
+    
+        var popup_e78127df251173efb97c5b0e8afbc120 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_76ece1a5f40e1d37a9f953fde329f0d3 = $(`<div id="html_76ece1a5f40e1d37a9f953fde329f0d3" style="width: 100.0%; height: 100.0%;">Greenwich Royal Observatory (Dan 3 – Ponedjeljak)</div>`)[0];
+            popup_e78127df251173efb97c5b0e8afbc120.setContent(html_76ece1a5f40e1d37a9f953fde329f0d3);
+        
+
+        marker_6f94aab32f910f5c8ce645177ad95adc.bindPopup(popup_e78127df251173efb97c5b0e8afbc120)
+        ;
+
+        
+    
+    
+            var marker_f3d8082c500ce6e232e91a665cba4ce4 = L.marker(
+                [51.4811, -0.0096],
+                {}
+            ).addTo(marker_cluster_ef799c012d83da78b68f163a6308c147);
+        
+    
+            var icon_0557ea866796546099b3f0e1678b090a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f3d8082c500ce6e232e91a665cba4ce4.setIcon(icon_0557ea866796546099b3f0e1678b090a);
+        
+    
+        var popup_ebfffb652bd663d7bbc317fa308b3d7b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ce5544435950cdabb763fcb15e47e5ab = $(`<div id="html_ce5544435950cdabb763fcb15e47e5ab" style="width: 100.0%; height: 100.0%;">Cutty Sark (Dan 3 – Ponedjeljak)</div>`)[0];
+            popup_ebfffb652bd663d7bbc317fa308b3d7b.setContent(html_ce5544435950cdabb763fcb15e47e5ab);
+        
+
+        marker_f3d8082c500ce6e232e91a665cba4ce4.bindPopup(popup_ebfffb652bd663d7bbc317fa308b3d7b)
+        ;
+
+        
+    
+    
+            var marker_e73b6a8d5a9d90c9f5f2bc5ad9fff644 = L.marker(
+                [51.5081, -0.0759],
+                {}
+            ).addTo(marker_cluster_ef799c012d83da78b68f163a6308c147);
+        
+    
+            var icon_3cfe9df7b1a1237dee9e783969a3acb3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e73b6a8d5a9d90c9f5f2bc5ad9fff644.setIcon(icon_3cfe9df7b1a1237dee9e783969a3acb3);
+        
+    
+        var popup_547daaa88480ed75d55258fd8b651dec = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e681c55ee2452cec695d33dd03ad3f0a = $(`<div id="html_e681c55ee2452cec695d33dd03ad3f0a" style="width: 100.0%; height: 100.0%;">Tower of London (Dan 3 – Ponedjeljak)</div>`)[0];
+            popup_547daaa88480ed75d55258fd8b651dec.setContent(html_e681c55ee2452cec695d33dd03ad3f0a);
+        
+
+        marker_e73b6a8d5a9d90c9f5f2bc5ad9fff644.bindPopup(popup_547daaa88480ed75d55258fd8b651dec)
+        ;
+
+        
+    
+    
+            var marker_13f48d40ccc0b6ca89abdd785f81d331 = L.marker(
+                [51.5055, -0.0754],
+                {}
+            ).addTo(marker_cluster_ef799c012d83da78b68f163a6308c147);
+        
+    
+            var icon_410fda67b511dc17cffcc0df4dfa9a60 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_13f48d40ccc0b6ca89abdd785f81d331.setIcon(icon_410fda67b511dc17cffcc0df4dfa9a60);
+        
+    
+        var popup_131abc272ae027dbb048173118641faa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_040f23cf3218f007eb053e726de9693e = $(`<div id="html_040f23cf3218f007eb053e726de9693e" style="width: 100.0%; height: 100.0%;">Tower Bridge (Dan 3 – Ponedjeljak)</div>`)[0];
+            popup_131abc272ae027dbb048173118641faa.setContent(html_040f23cf3218f007eb053e726de9693e);
+        
+
+        marker_13f48d40ccc0b6ca89abdd785f81d331.bindPopup(popup_131abc272ae027dbb048173118641faa)
+        ;
+
+        
+    
+    
+            var marker_796a57355599cfdb43be43e6bb79fded = L.marker(
+                [51.5054, -0.0911],
+                {}
+            ).addTo(marker_cluster_ef799c012d83da78b68f163a6308c147);
+        
+    
+            var icon_4ae03a1d9aeb5e920abeae617c7d4f5e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_796a57355599cfdb43be43e6bb79fded.setIcon(icon_4ae03a1d9aeb5e920abeae617c7d4f5e);
+        
+    
+        var popup_3b510ff6632ea326fb12637dcf2a513b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dc55b2ec8065cbc8866537103acaaa59 = $(`<div id="html_dc55b2ec8065cbc8866537103acaaa59" style="width: 100.0%; height: 100.0%;">Borough Market (Dan 3 – Ponedjeljak)</div>`)[0];
+            popup_3b510ff6632ea326fb12637dcf2a513b.setContent(html_dc55b2ec8065cbc8866537103acaaa59);
+        
+
+        marker_796a57355599cfdb43be43e6bb79fded.bindPopup(popup_3b510ff6632ea326fb12637dcf2a513b)
+        ;
+
+        
+    
+    
+            var marker_6c2519da5b2d08556a69831ada0393a8 = L.marker(
+                [51.5154, -0.141],
+                {}
+            ).addTo(marker_cluster_ef799c012d83da78b68f163a6308c147);
+        
+    
+            var icon_15df5397f009c0af0e026d4b02675300 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6c2519da5b2d08556a69831ada0393a8.setIcon(icon_15df5397f009c0af0e026d4b02675300);
+        
+    
+        var popup_a9a276b953d553f7c126fccd1c8d4b42 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ce85db977eb5c1ebb3bb1d85d3c38673 = $(`<div id="html_ce85db977eb5c1ebb3bb1d85d3c38673" style="width: 100.0%; height: 100.0%;">Oxford Street (Dan 3 – Ponedjeljak)</div>`)[0];
+            popup_a9a276b953d553f7c126fccd1c8d4b42.setContent(html_ce85db977eb5c1ebb3bb1d85d3c38673);
+        
+
+        marker_6c2519da5b2d08556a69831ada0393a8.bindPopup(popup_a9a276b953d553f7c126fccd1c8d4b42)
+        ;
+
+        
+    
+    
+            var marker_e1ab3d6cf311365836f3b33800332dcc = L.marker(
+                [51.5144, -0.0703],
+                {}
+            ).addTo(marker_cluster_ef799c012d83da78b68f163a6308c147);
+        
+    
+            var icon_a50d843106701b5ad0634c9d80d7c9c3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_e1ab3d6cf311365836f3b33800332dcc.setIcon(icon_a50d843106701b5ad0634c9d80d7c9c3);
+        
+    
+        var popup_5a10e5759c1f1ab5035771f3a9fa3bfd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_826378f48ffa6a7db8cdf72eb45f46a6 = $(`<div id="html_826378f48ffa6a7db8cdf72eb45f46a6" style="width: 100.0%; height: 100.0%;">Smještaj – Marlin Aldgate Tower Bridge</div>`)[0];
+            popup_5a10e5759c1f1ab5035771f3a9fa3bfd.setContent(html_826378f48ffa6a7db8cdf72eb45f46a6);
+        
+
+        marker_e1ab3d6cf311365836f3b33800332dcc.bindPopup(popup_5a10e5759c1f1ab5035771f3a9fa3bfd)
+        ;
+
+        
+    
+</script>
+</html>
